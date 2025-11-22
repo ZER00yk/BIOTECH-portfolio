@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BIOTECH Letter Reel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">BIOTECH</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biotech.html">BIOTECH Reel</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="letters-section">
+      <div class="letters-inner">
+        <h1 class="section-title">BIOTECH Letter Reel</h1>
+        <p class="section-subtitle">
+          Click a letter to see a short visual scene related to that part of biotechnology.
+        </p>
+
+        <div class="letter-nav">
+          <button class="letter-btn active" data-letter="B">B</button>
+          <button class="letter-btn" data-letter="I">I</button>
+          <button class="letter-btn" data-letter="O">O</button>
+          <button class="letter-btn" data-letter="T">T</button>
+          <button class="letter-btn" data-letter="E">E</button>
+          <button class="letter-btn" data-letter="C">C</button>
+          <button class="letter-btn" data-letter="H">H</button>
+        </div>
+
+        <div class="letter-panel" id="letter-panel">
+
+          <!-- B – Bacteria -->
+          <div class="letter-card letter-card-active" data-letter-content="B">
+            <div class="letter-header">
+              <span class="letter-big">B</span>
+              <div>
+                <h3>Bacteria</h3>
+                <p>
+                  Different bacterial shapes under the microscope: cocci, bacilli,
+                  spirilla. Shape relates to how they move, stick, and survive.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-grid">
+              <div class="video-item">
+                <div class="video-label">Coccus (round)</div>
+                <video src="bacteria-coccus.mp4" autoplay loop muted playsinline></video>
+              </div>
+              <div class="video-item">
+                <div class="video-label">Bacillus (rod)</div>
+                <video src="bacteria-bacillus.mp4" autoplay loop muted playsinline></video>
+              </div>
+              <div class="video-item">
+                <div class="video-label">Spirillum (spiral)</div>
+                <video src="bacteria-spirillum.mp4" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+          </div>
+
+          <!-- I – Immunology -->
+          <div class="letter-card" data-letter-content="I">
+            <div class="letter-header">
+              <span class="letter-big">I</span>
+              <div>
+                <h3>Immunology</h3>
+                <p>
+                  Antibodies and immune cells recognizing and clearing pathogens.
+                  This can include antibody–antigen binding or immune cells chasing invaders.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="immunology-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: antibody binding to a virus or immune cells interacting with pathogens.
+              </p>
+            </div>
+          </div>
+
+          <!-- O – Organism -->
+          <div class="letter-card" data-letter-content="O">
+            <div class="letter-header">
+              <span class="letter-big">O</span>
+              <div>
+                <h3>Organism</h3>
+                <p>
+                  Biotech often works with model organisms (plants, yeast, small animals)
+                  to understand genes, traits, and how treatments work.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="organism-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: a model organism used in labs, like plants, zebrafish, or mice.
+              </p>
+            </div>
+          </div>
+
+          <!-- T – Thermocycler -->
+          <div class="letter-card" data-letter-content="T">
+            <div class="letter-header">
+              <span class="letter-big">T</span>
+              <div>
+                <h3>Thermocycler</h3>
+                <p>
+                  PCR machines cycle through temperatures to denature, anneal,
+                  and extend DNA, creating millions of copies for analysis.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="thermocycler-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: a thermocycler running a PCR program.
+              </p>
+            </div>
+          </div>
+
+          <!-- E – Enzyme -->
+          <div class="letter-card" data-letter-content="E">
+            <div class="letter-header">
+              <span class="letter-big">E</span>
+              <div>
+                <h3>Enzyme</h3>
+                <p>
+                  Enzymes act as catalysts in almost every biological process,
+                  including cutting DNA, copying it, or modifying proteins.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="enzyme-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: an animation of an enzyme binding a substrate (lock-and-key / induced fit).
+              </p>
+            </div>
+          </div>
+
+          <!-- C – Cell Culture -->
+          <div class="letter-card" data-letter-content="C">
+            <div class="letter-header">
+              <span class="letter-big">C</span>
+              <div>
+                <h3>Cell Culture</h3>
+                <p>
+                  Growing cells in flasks or dishes under controlled conditions
+                  to study growth, test drugs, or produce biological products.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="cell-culture-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: cells in a culture dish or flasks handled in a biosafety cabinet.
+              </p>
+            </div>
+          </div>
+
+          <!-- H – Hemoglobin -->
+          <div class="letter-card" data-letter-content="H">
+            <div class="letter-header">
+              <span class="letter-big">H</span>
+              <div>
+                <h3>Hemoglobin</h3>
+                <p>
+                  Hemoglobin inside red blood cells carries oxygen throughout the body.
+                  Its structure and oxygen-binding are key in physiology.
+                </p>
+              </div>
+            </div>
+
+            <div class="video-single">
+              <video src="hemoglobin-clip.mp4" autoplay loop muted playsinline></video>
+              <p class="video-caption">
+                Example: red blood cells flowing through a vessel or hemoglobin 3D animation.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Biotech Portfolio</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
