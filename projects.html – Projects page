@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biotech Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">BIOTECH</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biotech.html">BIOTECH Reel</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="page-inner">
+        <h1 class="section-title">Biotech Projects</h1>
+        <p class="section-subtitle">
+          A sample of labs and assignments from Biotech 1 and Biotech 2.
+          You can edit or expand this list as you complete more work.
+        </p>
+
+        <div class="project-card">
+          <h3>Bacterial Transformation Lab</h3>
+          <p>
+            Short description of the lab. For example: introduced a plasmid
+            into <em>E. coli</em> and observed antibiotic resistance or GFP
+            fluorescence on plates.
+          </p>
+          <ul>
+            <li>My role: pipetting, plating, and incubating cultures.</li>
+            <li>Skills: sterile technique, serial dilution, plate setup.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Gel Electrophoresis & DNA Analysis</h3>
+          <p>
+            Brief description: ran DNA samples on an agarose gel to separate
+            fragments by size and interpret band patterns.
+          </p>
+          <ul>
+            <li>My role: casting gels, loading samples, running and imaging.</li>
+            <li>Skills: pipetting small volumes, using a power supply, reading results.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Enzyme Activity Experiment</h3>
+          <p>
+            Example description: tested how temperature or pH affects enzyme
+            activity by measuring reaction rate.
+          </p>
+          <ul>
+            <li>My role: planning controls, collecting time-course data.</li>
+            <li>Skills: graphing, analyzing trends, writing a conclusion.</li>
+          </ul>
+        </div>
+
+        <p style="font-size: 0.9rem; color: #cbd5ff; margin-top: 0.8rem;">
+          You can copy one of these cards and edit the title and bullets whenever
+          you have a new lab to showcase.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Biotech Portfolio</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
