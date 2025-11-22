@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biotech Portfolio – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">BIOTECH</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biotech.html">BIOTECH Reel</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-tagline">Student • Biotechnology</p>
+        <h1 class="hero-title">Biotech Portfolio</h1>
+        <p class="hero-subtitle">
+          A student-built portfolio connecting real biotech lab work with
+          clean visuals and code. Explore bacteria, immunology, cell culture,
+          and more through short scenes, videos, and project write-ups.
+        </p>
+        <div class="hero-actions">
+          <a href="biotech.html" class="btn-primary">View BIOTECH Intro</a>
+          <a href="projects.html" class="btn-secondary">See Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-inner">
+        <h2 class="section-title">What This Site Shows</h2>
+        <p>
+          This site is coded from scratch using HTML, CSS, and JavaScript
+          and hosted on GitHub Pages. It’s meant to show:
+        </p>
+        <ul>
+          <li>Your understanding of biotechnology concepts</li>
+          <li>Your ability to present lab work clearly</li>
+          <li>Your skills in using code to make interactive visuals</li>
+        </ul>
+        <p style="margin-top: 0.6rem;">
+          You can edit all text, add more pages, or swap in new videos as your
+          skills and projects grow.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Biotech Portfolio</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
