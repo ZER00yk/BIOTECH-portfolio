@@ -1,0 +1,456 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #050712 0%, #020308 55%, #000 100%);
+  color: #e5e9ff;
+  line-height: 1.6;
+}
+
+/* NAV */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background: linear-gradient(to bottom, rgba(3, 5, 14, 0.95), transparent);
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.7rem 1.6rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #63e0ff;
+}
+
+.top-nav nav a {
+  color: #c7d2ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-left: 1.4rem;
+  position: relative;
+}
+
+.top-nav nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.23rem;
+  width: 0;
+  height: 2px;
+  background: #63e0ff;
+  transition: width 0.18s ease;
+}
+
+.top-nav nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO (home) */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem 1.6rem 3rem;
+}
+
+.hero-inner {
+  max-width: 700px;
+  text-align: center;
+  padding: 3.2rem 2rem 2.4rem;
+  background: radial-gradient(
+    circle at top,
+    rgba(15, 26, 63, 0.85),
+    rgba(3, 6, 16, 0.96)
+  );
+  border-radius: 26px;
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(123, 169, 255, 0.4);
+}
+
+.hero-tagline {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a6bfff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 5.3vw, 3.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: #d0dcff;
+  max-width: 560px;
+  margin: 0 auto 1.6rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.7rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3af5ff, #8fa3ff);
+  color: #050712;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.9);
+}
+
+.btn-secondary {
+  background: rgba(10, 14, 28, 0.96);
+  color: #d5ddff;
+  border: 1px solid rgba(123, 169, 255, 0.5);
+}
+
+.btn-secondary:hover {
+  background: rgba(23, 33, 69, 0.96);
+}
+
+/* GENERIC PAGE SECTIONS */
+.page-section {
+  padding: 2rem 1.6rem 3.5rem;
+}
+
+.page-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: rgba(6, 9, 22, 0.96);
+  border-radius: 28px;
+  border: 1px solid rgba(123, 169, 255, 0.3);
+  padding: 2.4rem 2rem 2.2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #c4cff9;
+  margin-bottom: 1.4rem;
+}
+
+/* LISTS */
+.page-inner ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+  margin-top: 0.4rem;
+}
+
+.page-inner li + li {
+  margin-top: 0.25rem;
+}
+
+/* LETTERS SECTION (BIOTECH REEL) */
+.letters-section {
+  padding: 4.5rem 1.6rem 3.5rem;
+}
+
+.letters-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: rgba(6, 9, 22, 0.96);
+  border-radius: 28px;
+  border: 1px solid rgba(123, 169, 255, 0.3);
+  padding: 2.4rem 2rem 2.2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+}
+
+.letter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.letter-btn {
+  flex: 0 0 auto;
+  min-width: 2.4rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(140, 177, 255, 0.4);
+  background: rgba(14, 20, 45, 0.9);
+  color: #d5dfff;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s ease,
+    box-shadow 0.12s ease, border-color 0.18s ease;
+}
+
+.letter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.7);
+}
+
+.letter-btn.active {
+  background: linear-gradient(135deg, #3af5ff, #8fa3ff);
+  color: #04060f;
+  border-color: transparent;
+}
+
+.letter-panel {
+  position: relative;
+  min-height: 260px;
+}
+
+.letter-card {
+  display: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.letter-card-active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+
+.letter-big {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(143, 182, 255, 0.6);
+  background: radial-gradient(
+    circle at top left,
+    rgba(99, 224, 255, 0.4),
+    rgba(11, 18, 41, 0.98)
+  );
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+}
+
+.letter-header h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.letter-header p {
+  font-size: 0.92rem;
+  color: #cbd5ff;
+}
+
+/* VIDEO GRID (Bacteria) */
+.video-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.video-item {
+  background: rgba(11, 16, 35, 0.97);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(122, 162, 255, 0.4);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.8);
+}
+
+.video-label {
+  font-size: 0.85rem;
+  padding: 0.55rem 0.85rem;
+  color: #cfe2ff;
+  border-bottom: 1px solid rgba(122, 162, 255, 0.25);
+  background: radial-gradient(
+    circle at top left,
+    rgba(69, 121, 255, 0.55),
+    rgba(6, 12, 30, 0.98)
+  );
+}
+
+.video-item video {
+  width: 100%;
+  display: block;
+}
+
+/* SINGLE VIDEO (other letters) */
+.video-single {
+  margin-top: 0.8rem;
+  background: rgba(11, 16, 35, 0.97);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(122, 162, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85);
+}
+
+.video-single video {
+  width: 100%;
+  display: block;
+}
+
+.video-caption {
+  font-size: 0.85rem;
+  padding: 0.6rem 0.9rem;
+  color: #cfe2ff;
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(99, 224, 255, 0.35),
+    rgba(4, 10, 22, 1)
+  );
+}
+
+/* PROJECT CARDS (projects page and reuse) */
+.project-card {
+  background: rgba(10, 14, 28, 0.98);
+  border-radius: 20px;
+  padding: 1.5rem 1.4rem;
+  border: 1px solid rgba(122, 160, 255, 0.25);
+  margin-bottom: 1.1rem;
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-card p {
+  font-size: 0.92rem;
+  color: #d1dcff;
+}
+
+/* ABOUT GRID */
+.about-grid {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.about-card {
+  background: rgba(10, 14, 28, 0.98);
+  border-radius: 20px;
+  padding: 1.4rem 1.3rem;
+  border: 1px solid rgba(122, 160, 255, 0.25);
+}
+
+.about-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.about-card ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+  font-size: 0.9rem;
+}
+
+.about-card li + li {
+  margin-top: 0.25rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1.6rem 1.6rem 2.2rem;
+  color: #9faadb;
+}
+
+.footer-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 720px) {
+  .video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .letters-inner,
+  .page-inner {
+    padding-inline: 2.6rem;
+  }
+
+  .hero-inner {
+    padding-inline: 2.7rem;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .letters-inner,
+  .page-inner {
+    padding-inline: 1.4rem;
+  }
+
+  .hero-inner {
+    padding-inline: 1.6rem;
+  }
+
+  .letter-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
