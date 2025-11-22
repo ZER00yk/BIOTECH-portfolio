@@ -1,0 +1,35 @@
+// Footer year
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+// BIOTECH letter reel switching
+const letterButtons = document.querySelectorAll(".letter-btn");
+const letterCards = document.querySelectorAll(".letter-card");
+
+letterButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const letter = btn.dataset.letter;
+
+    // update button active state
+    letterButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // show the matching letter card
+    letterCards.forEach((card) => {
+      if (card.dataset.letterContent === letter) {
+        card.classList.add("letter-card-active");
+
+        // restart videos on that card
+        const vids = card.querySelectorAll("video");
+        vids.forEach((v) => {
+          v.currentTime = 0;
+          v.play().catch(() => {});
+        });
+      } else {
+        card.classList.remove("letter-card-active");
+      }
+    });
+  });
+});
