@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me – Biotech Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">BIOTECH</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="biotech.html">BIOTECH Reel</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="page-inner">
+        <h1 class="section-title">About Me</h1>
+
+        <p>
+          Replace this paragraph with your own introduction. For example:
+          who you are, your grade, what biotech classes you’re taking,
+          and what got you interested in this field.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Interests in Biotech</h3>
+            <ul>
+              <li>Example: molecular biology, hematology, or pathology</li>
+              <li>Example: lab diagnostics and how tests are developed</li>
+              <li>Example: using data to interpret lab results</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Skills I’m Building</h3>
+            <ul>
+              <li>Lab skills: micropipetting, gels, cell culture basics</li>
+              <li>Theory: DNA, enzymes, immunology, blood</li>
+              <li>Coding: HTML, CSS, JavaScript, basic visualization</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Goals</h3>
+            <ul>
+              <li>Short-term: improve in Biotech 2 and related science classes</li>
+              <li>Medium-term: explore internships or summer programs</li>
+              <li>Long-term: study a bioscience major and work in a lab or hospital setting</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 2rem; font-size: 1.2rem;">Contact</h2>
+        <p>
+          <strong>Email:</strong> <span>your.email@example.com</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Biotech Portfolio</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
